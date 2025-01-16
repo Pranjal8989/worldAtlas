@@ -392,6 +392,7 @@ country Card
 
 .country-card {
   margin-top: 3.2rem;
+
 }
 .country-section {
   margin: 6.4rem auto 9.6rem auto;
@@ -461,9 +462,11 @@ country Card
     font-weight: bold;
     letter-spacing: 0.1rem;
     text-transform: capitalize;
-    color: rgba(255, 255, 255, 0.8);
-    border: 0.05rem solid #fff;
-   
+    /* color: rgba(255, 255, 255, 0.8); */
+    color:rgba(255, 255, 255, 0.5);;
+    border: 0.05rem solid ;
+    border-radius: 1rem;
+    padding: 1rem;
     background: linear-gradient(71deg, #080509, #1a171c, #080509);
   }
 
