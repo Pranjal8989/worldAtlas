@@ -27,19 +27,21 @@ export const SearchFilter = ({
 
   return (
     <section className="section-searchFilter container">
-      <input
-        type="text"
-        placeholder="search..."
-        value={search}
-        onChange={handleInputChange}
-      />
-      <div>
+      {/* First Row: Search Input */}
+      <div className="row">
+        <input
+          type="text"
+          placeholder="search..."
+          value={search}
+          onChange={handleInputChange}
+          className="form-control"
+        />
+      </div>
+
+      {/* Second Row: Buttons and Dropdown */}
+      <div className="row actions">
         <button onClick={() => sortCountries("asc")}>Asc</button>
-      </div>
-      <div>
         <button onClick={() => sortCountries("des")}>Desc</button>
-      </div>
-      <div>
         <select
           className="select-section"
           value={filter}
