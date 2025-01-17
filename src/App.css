@@ -144,6 +144,9 @@ header {
   box-shadow: rgba(255, 255, 255, 0.3) 0px 10px 10px -10px;
   background-color: #202020;
   width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
 
   & .container {
     height: 10rem;
@@ -253,7 +256,7 @@ nav ul {
 /* About Section  */
 
 .section-about {
-  margin: 0 auto 9rem auto;
+  margin: 12rem auto 9rem auto;
 }
 
 .gradient-cards {
@@ -434,7 +437,7 @@ country Card
 
 }
 .country-section {
-  margin: 6.4rem auto 9.6rem auto;
+  margin: 12rem auto 9.6rem auto;
   & .grid {
     gap: 3.2rem;
     max-width: 132rem;
@@ -581,7 +584,7 @@ contact us page
 --------------- */
 
 .section-contact {
-  margin: 9.6rem auto;
+  margin: 12rem auto;
 
   & hr {
     border-color: rgba(255, 255, 255, 0.6);
@@ -715,4 +718,51 @@ contact us Page ends here
   border-radius: 10px; /* Rounded corners for the thumb */
 }
 
+/* ErrorPage section */
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* background-color: #f7f7f7; */
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.error-title {
+  font-size: 6rem;
+  font-weight: bold;
+  line-height: 1.3em;
+  margin: 2rem 0 0.5rem 0;
+  padding: 0;
+  text-shadow: 0 0 1rem #fefefe;
+  font-family: var(--font);
+}
+
+.error-message {
+  font-size: 2rem;
+  color: #fffcfc;
+  margin-bottom: 20px;
+}
+
+.error-details {
+  font-size: 1.5rem;
+  color: #f1c40f;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .error-title {
+    font-size: 3rem;
+  }
+  .error-message {
+    font-size: 1.2rem;
+  }
+  .go-back-button {
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
+}
 
